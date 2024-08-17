@@ -13,16 +13,14 @@ docs= text_splitter.split_documents(documents)
 
 
 
-
-
-# client = Client(host='http://172.25.1.139:11434')
-# response = client.chat(model='llama3', messages=[
-#   {
-#     'role': 'user',
-#     'content': 'هل تعرف العربية',
-#   },
-# ])
-# print(response)
+client = Client(host='http://172.25.1.139:11434')
+response = client.chat(model='llama3', messages=[
+  {
+    'role': 'user',
+    'content': 'هل تعرف العربية',
+  },
+])
+print(response)
 
 
 
